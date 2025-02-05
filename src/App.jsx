@@ -8,6 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
+    console.log("App Effect - WelcomeToastConfig 설정");
     setWelcomeToastConfig();
   }, []);
 
