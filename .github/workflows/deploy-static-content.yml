@@ -32,6 +32,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
+        env:
+          VITE_WELCOME_TOAST_API_KEY: ${{ secrets.VITE_WELCOME_TOAST_API_KEY }}
         run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
