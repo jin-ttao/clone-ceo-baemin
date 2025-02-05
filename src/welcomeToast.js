@@ -4,7 +4,7 @@ function setWelcomeToastConfig() {
     window.welcometoastConfig = {
       apiKey: import.meta.env.VITE_WELCOME_TOAST_API_KEY,
       init: function() {
-        console.log("setWelcomeToastConfig.init() 호출");
+        console.log("setWelcomeToastConfig.init() 호출", window.welcometoastConfig.apiKey);
         window.welcometoast.getProject(window.welcometoastConfig.apiKey);
       }
     };
